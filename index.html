@@ -58,7 +58,7 @@
     <section class="section hero hero-image">
       <div class="container hero-container">
         <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -440,6 +440,19 @@
 
     </div>
   </footer>
+
+  <!-- создаем модальное коно (обычно размещается после футера) -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" type="button" data-modal-close>
+        <svg class="modal-btn-icon" width="20" height="20">
+          <use href="./images/icons-sprite.svg#close-modal"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
